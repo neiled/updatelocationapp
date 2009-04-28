@@ -1,16 +1,16 @@
 development:
   strategy: oauth
-  oauth_consumer_key: devkey
-  oauth_consumer_secret: devsecret
+  oauth_consumer_key: WpEUoS5GL1dki31ADdfVQ
+  oauth_consumer_secret: ldaAEhgX0G99XhEX5p3CMHvO7eON3v0jpfsM5ZoF3w
   base_url: "https://twitter.com"
   authorize_path: "/oauth/authenticate"
   api_timeout: 10
   remember_for: 14 # days
-  oauth_callback: "http://localhost:3000/oauth_callback"
+  oauth_callback: "http://updatelocationapp.local/oauth_callback"
 test:
   strategy: oauth
-  oauth_consumer_key: testkey
-  oauth_consumer_secret: testsecret
+  oauth_consumer_key: 8FOxWj1gKf8KeNAsoCFSIQ
+  oauth_consumer_secret: Not99Co4IK8nL0x9jo3KdVpMVeof9iCvCR3q3KAqO0
   base_url: "https://twitter.com"
   authorize_path: "/oauth/authenticate"
   api_timeout: 10
@@ -18,8 +18,8 @@ test:
   oauth_callback: "http://localhost:3000/oauth_callback"
 production:
   strategy: oauth
-  oauth_consumer_key: prodkey
-  oauth_consumer_secret: prodsecret 
+  oauth_consumer_key: 8FOxWj1gKf8KeNAsoCFSIQ
+  oauth_consumer_secret: Not99Co4IK8nL0x9jo3KdVpMVeof9iCvCR3q3KAqO0 
   authorize_path: "/oauth/authenticate"
   base_url: "https://twitter.com"
   api_timeout: 10
