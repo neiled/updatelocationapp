@@ -7,6 +7,7 @@ RAILS_GEM_VERSION = '2.3.2' unless defined? RAILS_GEM_VERSION
 require File.join(File.dirname(__FILE__), 'boot')
 
 Rails::Initializer.run do |config|
+  config.gem 'capistrano'
   config.gem 'chriseppstein-compass', :lib => 'compass', :source => 'http://gems.github.com'
   config.gem 'haml', :version => '>=2.1'
   # Settings in config/environments/* take precedence over those specified here.
