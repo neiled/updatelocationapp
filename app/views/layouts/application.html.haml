@@ -4,11 +4,17 @@
     %meta{'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8'}
     %link{ :rel => "shortcut icon", :href => "/favicon.ico", :type => "image/x-icon"}
     %title= "#{page_title + ' - ' unless page_title.blank?}#{t(:app_name)}"
-    = stylesheet_link_tag 'screen.css', :media => 'screen, projection'
-    = stylesheet_link_tag 'print.css', :media => 'print'
+    = stylesheet_link_tag 'compiled/screen.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'compiled/print.css', :media => 'print'
     /[if IE]
-      = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
+      = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
+
   %body{:class => body_class}
     #header
       = render :partial => 'layouts/flashes'
-    .container= yield
+    .container
+      %a{:href=>"http://updatelocationapp.com"}
+        %h1 updatelocationapp.com    
+      = yield
+
+
