@@ -11,7 +11,6 @@ Rails::Initializer.run do |config|
   config.gem 'capistrano'
   config.gem 'chriseppstein-compass', :lib => 'compass', :source => 'http://gems.github.com'
   config.gem 'haml', :version => '>=2.1'
-  config.gem 'cucumber'
   config.gem 'twitter-auth', :lib => 'twitter_auth'    
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers
