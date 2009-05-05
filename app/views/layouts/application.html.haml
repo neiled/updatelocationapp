@@ -13,8 +13,14 @@
     #header
       = render :partial => 'layouts/flashes'
     .container
-      %a{:href=>"http://updatelocationapp.com"}
-        %h1 updatelocationapp.com    
+      %h1
+        = link_to "updatelocationapp.com", root_url
+      - unless not logged_in?
+        Currently logged in as
+        = current_user.name
+        = link_to "logout", logout_path
+        
+        %br
       = yield
 
       %script{type="text/javascript"}

@@ -34,6 +34,8 @@ ActionController::Routing::Routes.draw do |map|
   map.root :controller => "welcome"
   
   map.admin 'admin/', :controller => 'administration', :action => 'index'
+  
+  map.fireeagle_callback 'fireeagle_callback', :controller => "fireeagle", :action => "callback"
 
   # See how all your routes lay out with "rake routes"
 

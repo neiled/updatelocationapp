@@ -1,4 +1,4 @@
-set :application, "set your application name here"
+set :application, "updatelocationapp"
 set :repository,  "set your repository location here"
 
 # If you aren't deploying to /u/apps/#{application} on the target
@@ -8,7 +8,7 @@ set :repository,  "set your repository location here"
 
 # If you aren't using Subversion to manage your source code, specify
 # your SCM below:
-# set :scm, :subversion
+set :scm, :git
 
 role :app, "your app-server here"
 role :web, "your web-server here"
